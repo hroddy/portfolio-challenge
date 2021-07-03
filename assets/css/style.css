@@ -24,6 +24,14 @@ h2 {
     font-size: 45px;
     color: var(--green);
     text-shadow: 3px 3px 0px rgb(246, 215, 203, 1);
+    margin: 10px 10px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex: wrap;
+    width: 100%;
 }
 
 /* end All Section Styling */
@@ -70,13 +78,13 @@ header nav ul {
     list-style: none;
 }
 
+header nav ul li {
+    font-size: 30px;
+}
+
 header nav ul li a {
     padding: 20px 25px;
 
-}
-
-header nav ul li {
-    font-size: 30px;
 }
 
 header nav ul li a:hover {
@@ -101,24 +109,23 @@ footer {
 /* start About */
 
 .about {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 30px auto;
-    margin: 20px 30px;
+    width: 100%;
+    margin: 20px 20px;
+    text-align: center;
+}
+
+.about-img {
+    width: 20%;
 }
 
 .about-img img {
-    width: 50%;
+    width: 100%;
 }
 
 .about-bio {
     text-align: right;
     width: 35%;
-    line-height: 1.2;
+    line-height: 1.7;
 }
 
 /* end About */
@@ -126,10 +133,7 @@ footer {
 /* start Projects */
 
 .projects {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: flex-start;
+   text-align: center;
     background: var(--green);
     color: var(--light-salmon);
 }
@@ -138,6 +142,7 @@ footer {
     color: var(--salmon);
     text-shadow: 3px 3px 0px rgb(8, 54, 50, 1);
     margin: 20px auto 20px auto;
+    position: center;
 }
 
 .projects h3 {
@@ -153,7 +158,6 @@ footer {
 }
 
 .big-project img {
-    display: inline-block;
     height: 350px;
     width: 600px;
     margin: 10px 10px;
@@ -180,16 +184,6 @@ footer {
 /* end Projects */
 
 /* start Contact */
-
-.contact {
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    display: inline-block;
-    margin: 10px 30px;
-}
 
 .contact button {
     background: var(--green);
