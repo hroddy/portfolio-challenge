@@ -260,10 +260,6 @@ footer {
         margin: auto auto 30px auto;
     }
 
-    .contact {
-        flex-direction: row;
-    }
-
 }
 
 /* start Media Query for mobile phones and smaller */
