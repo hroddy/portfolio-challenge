@@ -1,0 +1,241 @@
+/* start All Section Styling  */
+
+:root {
+    --green: #0D5D56;
+    --dark-green: #083632;
+    --salmon: #F5D9CC;
+    --light-salmon: #FCF2EE;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--dark-green);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: var(--light-salmon);
+}
+
+h2 {
+    text-align: center;
+    font-size: 45px;
+    color: var(--green);
+    text-shadow: 3px 3px 0px rgb(246, 215, 203, 1);
+}
+
+/* end All Section Styling */
+
+/* start Body */
+
+/* start Header */
+
+header {
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: fixed;
+    z-index: 9999;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 5px 5px 0px rgba(2, 2, 2, 0.719);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--salmon);
+}
+
+header nav {
+    margin: 10px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 20px 25px;
+
+}
+
+header nav ul li {
+    font-size: 30px;
+}
+
+header nav ul li a:hover {
+    background: var(--light-salmon);
+    color: var(--green);
+    text-shadow: 3px 3px 0px rgb(246, 215, 203, 1);
+}
+
+/* end Header */
+
+/* start Footer */
+
+footer {
+    padding: 20px 20px;
+    background: var(--green);
+    color: var(--light-salmon);
+    text-align: right;
+}
+
+/* end Footer */
+
+/* start About */
+
+.about {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 30px auto;
+    margin: 20px 30px;
+}
+
+.about-img img {
+    width: 50%;
+}
+
+.about-bio {
+    text-align: right;
+    width: 35%;
+    line-height: 1.2;
+}
+
+/* end About */
+
+/* start Projects */
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background: var(--green);
+    color: var(--light-salmon);
+}
+
+.projects h2 {
+    color: var(--salmon);
+    text-shadow: 3px 3px 0px rgb(8, 54, 50, 1);
+    margin: 20px auto 20px auto;
+}
+
+.projects h3 {
+    font-size: 25px;
+    color: var(--salmon);
+    text-shadow: 3px 3px 0px rgb(8, 54, 50, 1);
+    text-align: center;
+}
+
+.projects img {
+    opacity: 80%;
+    border: 3px solid var(--light-salmon);
+}
+
+.big-project img {
+    display: inline-block;
+    height: 350px;
+    width: 600px;
+    margin: 10px 10px;
+}
+
+.small-projects img {
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.coming-soon img {
+    width: 250px;
+    height: 200px;
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.projects img:hover {
+    opacity: 100%;
+}
+
+/* end Projects */
+
+/* start Contact */
+
+.contact {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    display: inline-block;
+    margin: 10px 30px;
+}
+
+.contact button {
+    background: var(--green);
+    padding: 5px 5px;
+    margin: 3px 3px;
+    display: inline-block;
+}
+
+.contact button a {
+    text-decoration: none;
+    color: var(--salmon);
+    font-size: 20px;
+    text-shadow: 3px 3px 0px rgba(2, 2, 2, 0.319);
+    padding: 5px 5px;
+
+}
+
+.contact button:hover {
+    background: var(--dark-green);
+    text-shadow: 3px 3px 0px rgb(246, 215, 203, 1);
+}
+
+/* end Contact */
+
+/* end Body */
+
+/* start Media Query for smaller desktops and laptops */
+
+@media screen and (max-width: 980px) {
+
+}
+
+/* end Media Query for smaller desktops and laptops */
+
+/* start Media Query for tablets and smaller */
+
+@media screen and (max-width: 768px) {
+
+}
+
+/* end Media Query for tablets and smaller */
+
+/* start Media Query for mobile phones and smaller */
+
+@media screen and (max-width: 575px) {
+
+}
+
+/* end Media Query for mobile phones and smaller */
