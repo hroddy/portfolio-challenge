@@ -100,7 +100,7 @@ header nav ul li a:hover {
 footer {
     padding: 20px 20px;
     background: var(--green);
-    color: var(--light-salmon);
+    color: var(--salmon);
     text-align: right;
 }
 
@@ -115,7 +115,7 @@ footer {
 }
 
 .about-img {
-    width: 20%;
+    width: 15%;
 }
 
 .about-img img {
@@ -124,7 +124,7 @@ footer {
 
 .about-bio {
     text-align: right;
-    width: 35%;
+    width: 15%;
     line-height: 1.7;
 }
 
@@ -133,16 +133,16 @@ footer {
 /* start Projects */
 
 .projects {
-   text-align: center;
+    text-align: center;
     background: var(--green);
     color: var(--light-salmon);
+    margin: 25px auto;
+    padding: 20px 20px;
 }
 
 .projects h2 {
     color: var(--salmon);
     text-shadow: 3px 3px 0px rgb(8, 54, 50, 1);
-    margin: 20px auto 20px auto;
-    position: center;
 }
 
 .projects h3 {
@@ -160,20 +160,18 @@ footer {
 .big-project img {
     height: 350px;
     width: 600px;
-    margin: 10px 10px;
+    margin: 20px 10px;
 }
 
 .small-projects img {
     width: 300px;
     height: 200px;
-    display: inline-block;
-    margin: 10px 10px;
+    margin: 10px 0 30px 0;
 }
 
 .coming-soon img {
     width: 250px;
     height: 200px;
-    display: inline-block;
     margin: 10px 10px;
 }
 
@@ -188,8 +186,7 @@ footer {
 .contact button {
     background: var(--green);
     padding: 5px 5px;
-    margin: 3px 3px;
-    display: inline-block;
+    margin: 10px auto;
 }
 
 .contact button a {
@@ -214,22 +211,67 @@ footer {
 
 @media screen and (max-width: 980px) {
 
-}
+    .about-bio {
+        width: 50%
+    }
 
-/* end Media Query for smaller desktops and laptops */
+    .about-img {
+        width: 20%
+    }
+
+}
 
 /* start Media Query for tablets and smaller */
 
 @media screen and (max-width: 768px) {
 
-}
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
 
-/* end Media Query for tablets and smaller */
+    .about-bio {
+        width: 70%;
+        text-align: left;
+        margin: 5px auto 20px auto;
+    }
+
+    .about-img {
+        width: 30%;
+    }
+
+    .big-project img {
+        height: 250px;
+        width: 450px;
+    }
+
+    .small-projects img {
+        height: 170px;
+        width: 300px;
+    }
+
+    .coming-soon img {
+        height: 170px;
+        width: 200px;
+    }
+
+    .coming-soon {
+        margin: auto auto 30px auto;
+    }
+
+}
 
 /* start Media Query for mobile phones and smaller */
 
 @media screen and (max-width: 575px) {
 
-}
+    .about-img {
+        width: 50%;
+    }
+    
+    .big-project img {
+        height: 170px;
+        width: 300px;
+    }
 
-/* end Media Query for mobile phones and smaller */
+}
